@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>An important question?</title>
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Optional confetti (remove if you don't want it) -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  </head>
+
+  <body>
+    <main class="page">
+      <section class="card" id="card">
+        <div class="icon">💗</div>
+
+        <h1 class="title" id="title">Vaniya, will you be my Valentine?</h1>
+        <p class="hint" id="hint">“No” seems a bit shy 🙂</p>
+
+        <!-- Play area (buttons will be positioned by JS) -->
+        <div class="playArea" id="playArea">
+          <button class="btn yes" id="yesBtn">Yes</button>
+          <button class="btn no" id="noBtn">No</button>
+        </div>
+
+        <div class="success hidden" id="success">
+          <h2 class="yay">YAY! 🎉</h2>
+          <img id="successGif" src="assets/yay.gif" alt="celebration" />
+        </div>
+      </section>
+    </main>
+
+    <!-- Background music (plays once, started by first interaction) -->
+    <audio id="bgm" src="assets/bgm.mp3" preload="auto"></audio>
+
+    <script src="app.js"></script>
+  </body>
+</html>
